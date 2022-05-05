@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-image {
+	background: url('./images/bglLogin.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-clip: content-box;
+}
+.bg-half-image {
+	background: url('./images/half-bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-clip: content-box;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	opacity: 1;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 2px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #c2c2c2;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #c2c2c2;
+}
+
+@media (max-width: 1023px) {
+	.bg-image {
+		background: none;
+	}
+}
